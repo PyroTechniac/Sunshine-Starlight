@@ -5,5 +5,14 @@
   "main": "app.js",
   "author": {
     "name": ""
+  },
+  "dependencies": {
+    "common-tags": "^1.8.0",
+    "convict": "^4.4.1",
+    "discord.js": "^11.4.2",
+    "discord.js-commando": "^0.10.0",
+    "dotenv": "^6.2.0",
+    "sequelize": "^4.42.0",
+    "sqlite": "^3.0.0"
   }
 }
