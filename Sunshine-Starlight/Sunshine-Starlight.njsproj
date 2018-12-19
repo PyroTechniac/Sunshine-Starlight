@@ -11,8 +11,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>3d7330c9-adcb-409b-b0c2-802c079ae634</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>
-    </StartupFile>
+    <StartupFile>bots.js</StartupFile>
     <StartWebBrowser>False</StartWebBrowser>
     <SearchPath>
     </SearchPath>
@@ -34,9 +33,35 @@
     <Content Include="README.md" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="bots.js">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="config.js">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="providers\Sequelize.js">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="server\client-bot.js">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="structures\Client.js">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="structures\StarlightDatabase.js">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="structures\SunshineDatabase.js">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="commands\" />
+    <Folder Include="commands\admin\" />
+    <Folder Include="commands\util\" />
+    <Folder Include="providers\" />
+    <Folder Include="server\" />
+    <Folder Include="structures\" />
   </ItemGroup>
   <!-- Do not delete the following Import Project.  While this appears to do nothing it is a marker for setting TypeScript properties before our import that depends on them. -->
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="False" />
